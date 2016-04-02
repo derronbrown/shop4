@@ -14,7 +14,7 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
   #S3 configuration
-      if Rails.env.production? then
+      #if Rails.env.production? then
            #production. Store images on S3.
            # development will default to local storage
           attachment_config = {
@@ -38,7 +38,7 @@ Spree.config do |config|
           attachment_config.each do |key, value|
                Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
           end
-     end
+     #end
 end
 
 Spree.user_class = "Spree::LegacyUser"

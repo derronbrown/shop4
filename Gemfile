@@ -25,6 +25,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'rails_12factor', group: :production
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
+gem "paperclip", '~> 4.2.0'
+gem 'aws-sdk', '~> 2'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -49,7 +52,10 @@ group :development do
 end
 
 
-gem 'spree', '3.0.4'
-gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+#gem 'spree', '3.0.4'
+#gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+#gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+gem 'spree', '~> 3.0.7'
+gem 'spree_auth_devise', '~> 3.0.5'
+gem 'spree_gateway', '~> 3.0.0'
 gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express', branch: '3-0-stable'
