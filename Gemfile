@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'dotenv-rails', :groups => [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use postgres as the database for Active Record
@@ -25,8 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'rails_12factor', group: :production
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
-gem "paperclip", '~> 4.2.0'
-gem 'aws-sdk', '~> 2'
+gem 'paperclip', '~> 4.2.0'
+gem 'aws-sdk', '< 2.0'
 
 
 # Use ActiveModel has_secure_password
@@ -51,10 +51,6 @@ group :development do
   gem 'spring'
 end
 
-
-#gem 'spree', '3.0.4'
-#gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
-#gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
 gem 'spree', '~> 3.0.7'
 gem 'spree_auth_devise', '~> 3.0.5'
 gem 'spree_gateway', '~> 3.0.0'

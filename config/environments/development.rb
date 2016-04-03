@@ -38,4 +38,16 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+=begin  config.paperclip_defaults = {
+  :storage => :s3,
+  :url => "jamplat.s3.amazonaws.com/",
+  :path => ":class/:id.:style.:extension",
+  :s3_credentials => {
+    :bucket => ENV['S3_BUCKET'],
+    :access_key_id => ENV['S3_KEY'],
+    :secret_access_key => ENV['S3_SECRET']
+  }
+}
+=end  
 end
