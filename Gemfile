@@ -27,7 +27,7 @@ gem 'rails_12factor', group: :production
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
 gem 'paperclip', '~> 4.2.0'
 gem 'aws-sdk', '< 2.0'
-
+gem 'raygun4ruby'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
