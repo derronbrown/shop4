@@ -10,6 +10,9 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
+
+	config.default_country_id = Spree::Country.find_by_iso("US").id
+
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
